@@ -6,15 +6,10 @@
     public class Class1
     {
         [Test]
-        public void TeamCity_Test()
+        public void TeamCity_Test( [Values("A", "B", "C")] string x)
         {
-            Assert.AreEqual(true, true);
-        }
-
-        [Test]
-        public void TeamCity_Test_Fails()
-        {
-            Assert.AreEqual(true, false);
+            var fb = new FooBar(x);
+            Assert.AreEqual(x, fb.MyProp);
         }
     }
 }
