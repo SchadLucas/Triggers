@@ -26,6 +26,9 @@ bld/
 # Roslyn cache directories
 *.ide/
 
+# NuGet Packages
+Triggers.Packages/
+
 # MSTest test Results
 [Tt]est[Rr]esult*/
 [Bb]uild[Ll]og.*

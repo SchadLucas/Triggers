@@ -1,22 +1,21 @@
 ﻿namespace Triggers
 {
     using System;
+    using Microsoft.Owin.Hosting;
+    using Triggers.Host;
 
     internal class Program
     {
-        private static void Main(string[] args)
-        {
-            Console.WriteLine("TeamCity Commit");
-        }
-    }
+        private static readonly string serviceName = "TriggersTest";
 
-    public class FooBar
-    {
-        public string MyProp { get; private set; }
-
-        public FooBar(string x)
+        private static void Main()
         {
-            MyProp = x;
+            var url = "http://+:8080";
+
+            using (var app = WebApp.Start<OwinStartup>(url))
+            {
+                Console.ReadKey();
+            }
         }
     }
 }
