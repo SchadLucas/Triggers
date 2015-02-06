@@ -1,11 +1,9 @@
-﻿using Owin;
-
-namespace Triggers.Host.Middleware
+﻿namespace Triggers.Host.Middleware
 {
     using System.Threading.Tasks;
+    using global::Owin;
     using Microsoft.Owin;
     using NLog;
-    using AppFunc = System.Func<System.Collections.Generic.IDictionary<string, object>, System.Threading.Tasks.Task>;
 
     public class LoggingMiddleware : IOwinMiddleware
     {
@@ -27,8 +25,10 @@ namespace Triggers.Host.Middleware
 
         public override async Task Invoke(IOwinContext context)
         {
-            var e = new OwinEnvironment(context.Environment);
-            _logger.Info("Begin Request: {0}", e.Request.Path);
+            var e = new OwinContext(context.Environment);
+
+            // todo: Log if path does not exist
+            _logger.Info("[{1}] {2} from {0}", e.Request.RemoteIpAddress, e.Request.Method, e.Request.Path);
             await Next.Invoke(context);
         }
     }

@@ -3,7 +3,6 @@
     using Nancy;
     using Nancy.Bootstrapper;
     using Nancy.TinyIoc;
-    using Triggers.Host.Middleware;
 
     internal class NancyBootstrapper : DefaultNancyBootstrapper
     {
@@ -16,6 +15,8 @@
         {
             // var x = container.Resolve(typeof (IOwinMiddleware));
             // your customization goes here
+
+            Conventions.ViewLocationConventions.Add((viewName, model, context) => string.Concat("Triggers.UI/views/", viewName));
         }
     }
 }

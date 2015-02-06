@@ -6,7 +6,10 @@
     {
         public MainModule()
         {
-            Get["/"] = parameters => { return "nur slash"; };
+            // warum auch immer? können hier keine Abhängikeiten via Cosntructor Injection geladen werden
+            // zumindest wird ein leers IPluginRepository geladen - obwohl es nicht leer sein sollte
+            // der Container hat die Plugins zu dieser Zeit eigentlich schon geladen
+            Get["/"] = _ =>View["index"];
         }
     }
 }

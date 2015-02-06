@@ -3,7 +3,6 @@
     using System.Threading.Tasks;
     using global::Owin;
     using Microsoft.Owin;
-    using AppFunc = System.Func<System.Collections.Generic.IDictionary<string, object>, System.Threading.Tasks.Task>;
 
     public class LowerPathMiddleware : IOwinMiddleware
     {
