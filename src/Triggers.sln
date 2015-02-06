@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Triggers.Plugin.RSS", "Trig
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Triggers.SignalR", "Triggers.SignalR\Triggers.SignalR.csproj", "{3D6B0A3F-EF88-48F0-964C-224A293D1F3D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Host", "Host", "{E9B5A099-145D-4E06-8779-F16CF55FD017}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -70,6 +72,8 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{891EB862-B06E-46A3-9ED8-CA026CA8B32E} = {E9B5A099-145D-4E06-8779-F16CF55FD017}
+		{F5133A4B-2FBC-4908-8A09-14801BFB562B} = {E9B5A099-145D-4E06-8779-F16CF55FD017}
 		{B73DE6F0-0DB0-4C29-AF95-817E2E61B225} = {5424C5FD-E9EE-4F6C-BB8C-04253C04D1AA}
 	EndGlobalSection
 EndGlobal

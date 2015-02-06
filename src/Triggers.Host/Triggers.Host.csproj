@@ -48,6 +48,9 @@
     <Reference Include="Nancy.Owin">
       <HintPath>..\Triggers.Packages\Nancy.Owin.1.0.0\lib\net40\Nancy.Owin.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\Triggers.Packages\Newtonsoft.Json.6.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="NLog">
       <HintPath>..\Triggers.Packages\NLog.3.2.0.0\lib\net45\NLog.dll</HintPath>
     </Reference>
@@ -67,6 +70,7 @@
     <Compile Include="Frontend\Mappers\StaticResourceMapperBase.cs" />
     <Compile Include="Middleware\HttpResponseHeaderMiddleware.cs" />
     <Compile Include="Middleware\SignalRMiddleware.cs" />
+    <Compile Include="Modules\ApiModule.cs" />
     <Compile Include="Modules\StaticResourceModule.cs" />
     <Compile Include="MainAppContainerBuilder.cs" />
     <Compile Include="Middleware\NancyMiddleware.cs" />

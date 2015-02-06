@@ -1,0 +1,94 @@
+/* <editor-fold desc="Navbar Icons"> */
+.triggers-icon-heart:before {
+    content: "\f004";
+    color: #c4273c;
+}
+
+.triggers-icon-settings:before {
+    content: "\f085";
+}
+
+.triggers-icon-notifications:before {
+    content: "\f01c";
+}
+
+.triggers-icon-system:before {
+    content: "\f108";
+}
+
+.triggers-icon-applications:before {
+    content: "\f1b3";
+}
+
+/* </editor-fold> */
+
+.navbar {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.navbar-default .navbar-nav > .active > a {
+    color: #9D9C9C;
+}
+
+.navbar-default .navbar-nav > .active > a:hover {
+    color: #9D9C9C;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #9D9C9C;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    background: #6B6A6A;
+    border-radius: 10px;
+}
+
+.navbar-default .navbar-nav > .active {
+    background-color: transparent;
+}
+
+.navbar-default .navbar-nav > .active > a:hover {
+    background-color: transparent;
+}
+
+.navbar-default .navbar-nav > .active > a {
+    background: transparent;
+}
+
+/* <editor-fold desc="Navbar Label"> */
+.navbar-label {
+    border-radius: 8px;
+    color: white;
+}
+
+.navbar-label-info {
+    background-color: lightblue;
+}
+
+.navbar-label-warning {
+    background-color: orange;
+}
+
+.navbar-label-critical {
+    background-color: red;
+}
+
+/* </editor-fold> */
+
+body {
+    background-color: #272727;
+}
+
+.outlet {
+    background-color: #fdfdfd;
+    padding: 20px 40px;
+    box-shadow: 0 0 30px 1px #aaa;
+}
+
+/*                            960 + 40*/
+@media screen and (min-width: 1000px) {
+    .outlet {
+        border-radius: 4px;
+    }
+}

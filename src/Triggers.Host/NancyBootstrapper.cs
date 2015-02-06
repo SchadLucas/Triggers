@@ -16,7 +16,9 @@
             // var x = container.Resolve(typeof (IOwinMiddleware));
             // your customization goes here
 
-            Conventions.ViewLocationConventions.Add((viewName, model, context) => string.Concat("Triggers.UI/views/", viewName));
+            // todo:
+            //Conventions.ViewLocationConventions.Add((viewName, model, context) => string.Concat("Triggers.UI/views/", viewName));
+            Conventions.ViewLocationConventions.Add((viewName, model, context) => string.Concat("../../src/Triggers.UI/views/", viewName));
         }
     }
 }

@@ -13,7 +13,9 @@
 
             //return Path.Combine(_appFolderInfo.StartUpFolder, "UI", path);
             var startUpFolder = Directory.GetCurrentDirectory();
-            return Path.Combine(startUpFolder, "Triggers.UI", path);
+            // todo: 
+            return Path.Combine(startUpFolder, "../../src/Triggers.UI", path);
+            //return Path.Combine(startUpFolder, "Triggers.UI", path);
         }
 
         public override bool CanHandle(string resourceUrl)

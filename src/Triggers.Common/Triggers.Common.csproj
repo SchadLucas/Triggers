@@ -39,6 +39,8 @@
     <Compile Include="Composition\Container.cs" />
     <Compile Include="Composition\ContainerBuilderBase.cs" />
     <Compile Include="Composition\IContainer.cs" />
+    <Compile Include="Database\SQLite.cs" />
+    <Compile Include="Database\SQLiteAsync.cs" />
     <Compile Include="Plugin\Attributes.cs" />
     <Compile Include="Plugin\Interface.cs" />
     <Compile Include="Plugin\PluginRepository.cs" />

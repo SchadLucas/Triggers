@@ -25,6 +25,7 @@
                 Console.WriteLine("");
                 Console.WriteLine("");
                 //Logger.FatalException("EPIC FAIL!", e);
+                Console.WriteLine("EPIC FAIL!\n{0}", e);
                 Console.WriteLine("Press any key to exit...");
                 Console.ReadLine();
                 Environment.Exit(1);

@@ -1,0 +1,124 @@
+/* <editor-fold desc="Default Page Layout"> */
+html {
+}
+
+/* Fix Top-Padding for body based on Device Width */
+@media screen and (max-width: 768px) {
+    body {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    body {
+        margin-top: 110px;
+    }
+}
+
+.outlet {
+    max-width: 960px;
+    margin: 0 auto;
+    min-height:600px;
+    margin-bottom: 100px;
+}
+
+.middle {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* BUTTON FIX */
+a {
+    cursor: pointer;
+}
+
+.navbar-default .navbar-nav > .active > a:hover {
+    cursor: default;
+}
+
+/*</editor-fold>*/
+
+/* <editor-fold desc="Navbar Label"> */
+.navbar-label {
+    width: 25px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+}
+
+@media (min-width: 767px) {
+
+    .navbar-label {
+        position: absolute;
+        top: 20px;
+        right: 10px;
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar-label {
+        display: inline;
+        margin-left: 10px;
+    }
+}
+
+/* </editor-fold> */
+
+/* <editor-fold desc="Navbar Position & Layout"> */
+/*Stick Navbar to top*/
+.nav-container {
+    /*todo: move content up*/
+}
+
+/* Desktop & Tablet CSS */
+@media (min-width: 767px) {
+    /* Center Navbar Items */
+    .navbar-nav {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar-nav > li {
+        float: none;
+        display: inline-block;
+    }
+
+    /* Fixed Width for Navbar Items */
+    ul.navbar-nav a {
+        width: 100px;
+    }
+}
+
+/* </editor-fold> */
+
+/* <editor-fold desc="Navbar Icons"> */
+
+ul.navbar-nav a i {
+    font-family: "FontAwesome";
+    font-style: normal;
+}
+
+/* Fallback-Icon */
+[class^="triggers-icon-"]:before {
+    content: "\f1b2";
+}
+
+@media (min-width: 767px) {
+
+    /* Change Icon Size & Position */
+    ul.navbar-nav a i {
+        font-size: 35px;
+        display: block;
+        margin: 20px 0;
+    }
+}
+
+/* </editor-fold> */
+
+.ember-application{
+    margin-top:20px;
+}
