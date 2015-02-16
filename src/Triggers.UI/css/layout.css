@@ -18,8 +18,19 @@ html {
 .outlet {
     max-width: 960px;
     margin: 0 auto;
-    min-height:600px;
-    margin-bottom: 100px;
+}
+
+@media screen and (min-width: 767px) {
+    .outlet {
+        min-height: 600px;
+        margin-bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .outlet {
+        min-height: 380px;
+    }
 }
 
 .middle {
@@ -119,6 +130,6 @@ ul.navbar-nav a i {
 
 /* </editor-fold> */
 
-.ember-application{
-    margin-top:20px;
+.ember-application {
+    margin-top: 20px;
 }
