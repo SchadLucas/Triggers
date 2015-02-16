@@ -141,6 +141,19 @@
         apps halt
       </script>
 
+      <script type="text/x-handlebars" data-template-name="settings">
+        <ul class="nav nav-pills">
+          {{#link-to "agents" tagName="li"}}<a {{bind-attr href="view.href"}}>Notifications</a>{{/link-to}}
+          {{#link-to "agents" tagName="li"}}<a {{bind-attr href="view.href"}}>Plugins</a>{{/link-to}}
+          {{#link-to "agents" tagName="li"}}<a {{bind-attr href="view.href"}}>Logging</a>{{/link-to}}
+          {{#link-to "agents" tagName="li"}}<a {{bind-attr href="view.href"}}>Backups</a>{{/link-to}}
+        </ul>
+
+        <div class="sub-outlet">
+          {{outlet}}
+        </div>
+      </script>
+
       <script type="text/x-handlebars" data-template-name="system">
         <ul class="nav nav-pills">
           {{#link-to "agents" tagName="li"}}<a {{bind-attr href="view.href"}}>Agents</a>{{/link-to}}
