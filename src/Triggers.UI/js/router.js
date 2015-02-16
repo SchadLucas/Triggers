@@ -3,7 +3,7 @@ Triggers.Router.map(function () {
     this.resource('notifications');
     this.resource('applications');
     this.resource('settings');
-    this.resource('system',  function () {
+    this.resource('system', function () {
         // child routes
         this.resource('log');
         this.resource('agents');
@@ -24,6 +24,16 @@ Triggers.SystemRoute = Em.Route.extend({
         window.document.title = 'System - Triggers';
     }
 });
+
+Triggers.LogRoute = Em.Route.extend({
+    model: function () {
+        return this.store.find('log');
+    },
+    activate: function () {
+        window.document.title = 'Logs - Triggers';
+    }
+});
+
 
 Triggers.NotificationsRoute = Em.Route.extend({
     model: function () {
