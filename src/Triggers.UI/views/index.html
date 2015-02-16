@@ -179,14 +179,14 @@
             </tr>
           </thead>
           <tbody>
-        {{#each msg in processedData}}
-          <tr>
-            <td><i {{bind-attr class=msg.level}}></i></td>
-            <td>{{msg.component}}</td>
-            <td>{{msg.caption}}</td>
-            <td>{{msg.timestamp}}</td>
-          </tr>
-        {{/each}}
+            {{#each msg in processedData}}
+              <tr>
+                <td><i {{bind-attr class=msg.level}}></i></td>
+                <td>{{msg.component}}</td>
+                <td>{{msg.caption}}</td>
+                <td>{{msg.timestamp}}</td>
+              </tr>
+            {{/each}}
           </tbody>
         </table>
       </script>
