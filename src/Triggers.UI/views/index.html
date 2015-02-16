@@ -149,8 +149,9 @@
           {{#link-to "backup" tagName="li"}}<a {{bind-attr href="view.href"}}>Backup</a>{{/link-to}}
         </ul>
 
-
-        {{outlet}}
+        <div class="sub-outlet">
+          {{outlet}}
+        </div>
       </script>
 
     <!-- SYSTEM TEMPLATES START -->
