@@ -7,7 +7,7 @@ Triggers.LogController = Ember.Controller.extend({
         result = [];
         this.model.forEach(function(e){
             var x = e;
-            x.set('level', 'loglevel-' + e.get('level').toLowerCase());
+            x.set('level', 'loglevel loglevel-' + e.get('level').toLowerCase());
             result.push(x);
         });
         return result;

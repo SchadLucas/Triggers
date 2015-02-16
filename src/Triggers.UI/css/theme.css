@@ -93,26 +93,43 @@ body {
     }
 }
 
-.sub-outlet{
+.sub-outlet {
     padding: 20px 0;
 }
 
+/* <editor-fold desc="LogLevel"> */
+.loglevel {
+    font-family: "FontAwesome";
+    font-style: normal;
+}
 
 .loglevel-trace:before {
-    content: "T";
+    content: "\f05a";
+    color: grey;
 }
+
 .loglevel-debug:before {
-    content: "D";
+    content: "\f05a";
+    color: grey;
 }
+
 .loglevel-info:before {
-    content: "I";
+    content: "\f05a";
+    color: blue;
 }
+
 .loglevel-warn:before {
-    content: "W";
+    content: "\f06a";
+    color: darkorange;
 }
+
 .loglevel-error:before {
-    content: "E";
+    content: "\f188";
+    color: red;
 }
+
 .loglevel-fatal:before {
-    content: "F";
+    content: "\f188";
+    color: red;
 }
+/* </editor-fold> */
