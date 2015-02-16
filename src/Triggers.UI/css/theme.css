@@ -96,3 +96,23 @@ body {
 .sub-outlet{
     padding: 20px 0;
 }
+
+
+.loglevel-trace:before {
+    content: "T";
+}
+.loglevel-debug:before {
+    content: "D";
+}
+.loglevel-info:before {
+    content: "I";
+}
+.loglevel-warn:before {
+    content: "W";
+}
+.loglevel-error:before {
+    content: "E";
+}
+.loglevel-fatal:before {
+    content: "F";
+}
