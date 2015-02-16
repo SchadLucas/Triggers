@@ -169,26 +169,37 @@
 
     <!-- SYSTEM TEMPLATES START -->
       <script type="text/x-handlebars" data-template-name="log">
-        <table class="table">
-          <thead>
-            <tr>
-              <th> </th>
-              <th>Component</th>
-              <th>Message</th>
-              <th>Timestamp</th>
-            </tr>
-          </thead>
-          <tbody>
-            {{#each msg in processedData}}
+        <div class="col-md-2">
+          <ul class="nav nav-pills nav-stacked">
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-10">
+          <table class="table">
+            <thead>
               <tr>
-                <td><i {{bind-attr class=msg.level}}></i></td>
-                <td>{{msg.component}}</td>
-                <td>{{msg.caption}}</td>
-                <td>{{msg.timestamp}}</td>
+                <th> </th>
+                <th>Component</th>
+                <th>Message</th>
+                <th>Timestamp</th>
               </tr>
-            {{/each}}
-          </tbody>
-        </table>
+            </thead>
+            <tbody>
+              {{#each msg in processedData}}
+                <tr>
+                  <td><i {{bind-attr class=msg.level}}></i></td>
+                  <td>{{msg.component}}</td>
+                  <td>{{msg.caption}}</td>
+                  <td>{{msg.timestamp}}</td>
+                </tr>
+              {{/each}}
+            </tbody>
+          </table>
+        </div>
       </script>
 
       <script type="text/x-handlebars" data-template-name="agents">
