@@ -61,6 +61,7 @@
                 new LogMessage {Component="ApiModule", Caption="IDK", Message="foo", Level=LogLevel.Warn.ToString(), Timestamp = DateTime.Now},
                 new LogMessage {Component="ApiModule", Caption="IstillDK", Message="bar", Level=LogLevel.Error.ToString(), Timestamp = DateTime.Now},
                 new LogMessage {Component="ApiModule", Caption="WEman", Message="baz", Level=LogLevel.Fatal.ToString(), Timestamp = DateTime.Now},
+                new LogMessage {Component="ApiModule", Caption="Das wr gestern bra", Message="baz", Level=LogLevel.Fatal.ToString(), Timestamp = DateTime.Now.Subtract(new TimeSpan(1,1,1,1))},
             };
 
             var notificationsJson = JsonConvert.SerializeObject(new {Notifications = n});
