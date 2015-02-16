@@ -103,6 +103,11 @@ body {
     font-style: normal;
 }
 
+.loglevel-all:before {
+    content: "\f10c";
+    color: black;
+}
+
 .loglevel-trace:before {
     content: "\f05a";
     color: grey;
